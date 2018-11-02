@@ -20,10 +20,8 @@ namespace GithubEmojis.Pages {
             set;
         }
 
-        public void OnGet() {
-            string filepath = "/Users/sayedhashimi/temp/emojis.json";
-            var text = System.IO.File.ReadAllText(filepath);
-            Emojis = _emojiService.GetEmojisFrom(text);
+        public async Task OnGet() {
+            Emojis = await _emojiService.GetEmojis();
         }
     }
 }
