@@ -12,9 +12,7 @@ namespace GithubEmojis.Pages {
         public IndexModel(IGithubEmojiService emojiService) {
             _emojiService = emojiService;
         }
-
-        const string GithubEmojiUrl = "https://api.github.com/emojis";
-
+        
         public IList<Emoji> Emojis {
             get;
             set;

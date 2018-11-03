@@ -1,17 +1,7 @@
-body {
-    align-content: center;
+h1 {
+    text-align: center;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
-
-ul.emojiList {
-    list-style-type: none;
-}
-
-    ul.emojiList li {
-        display: -webkit-flex; /* Safari */
-        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-        display: flex;
-        flex-wrap: wrap;
-    }
 
 .allEmojis {
     display: flex;
@@ -19,12 +9,11 @@ ul.emojiList {
 }
 
 div.emoji {
+    margin: auto;
     margin-right: 10px;
     text-align: center;
-    align-content: center;
     vertical-align: middle;
 }
-
     div.emoji code {
         display: block;
     }
